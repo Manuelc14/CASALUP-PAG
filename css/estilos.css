@@ -20,7 +20,7 @@
     --main-color2: #1b8fc1;
     --white-color: #fdfdfd;
     --btn-color: #1bc134;
-    --bg-color2: #cbcbcb62;
+    --bg-color2: #fbfbfb;
     --shadow-color: rgba(0, 0, 0, 0.35);
     --color-esqueleto: #eff3f5;
     --text-footer: #7a7a7a;
@@ -136,7 +136,7 @@ span{
     align-items: center;
     color: var(--btn-color);
     /* background: var(--white-color); */
-    border: 0.1rem solid var(--main-color2);
+    border: 0.1rem solid var(--main-color);
     padding: 0 1rem;
     border-radius: 20%;
 }
@@ -176,6 +176,7 @@ nav ul li {
 nav ul li a {
     color: var(--text-color);
     font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .nav_mod {
@@ -227,7 +228,6 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-bottom: 120px;
     font-family: "Poppins", sans-serif;
     padding-top: 100px;
     position: relative;
@@ -251,7 +251,7 @@ nav ul li a {
     color: var(--text-color);
     border-radius: 12px;
     transition: all .1s ease;
-    background: var(--main-color);
+    background: var(--main-color2);
     align-items: center;
     align-content: center;
     color: var(--white-color);
@@ -322,7 +322,7 @@ nav ul li a {
     box-shadow: 0 .2rem .5rem var(--shadow-color);
     width: 42%;
     left: 2rem;
-    bottom: 30rem;
+    bottom: 4rem;
     z-index: 10;
 }
 .box-banner-publicitario{
@@ -394,43 +394,46 @@ nav ul li a {
 
 
 .certificados{
-    padding-top: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap row;
-    background: linear-gradient(180deg, var(--main-color) 50%, var(--bg-color)); 
-}
-.certificados h1{
-    font-size: 2.2rem;
-    color: var(--text-color);
-    padding: 2rem;
-}
-.certificados h1 span{
-    color: var(--main-color2);
-}
-.container-certificados{
-    display: flex;
-    flex-flow: wrap row;
-    align-items: center;
+    width: 100%;
+    margin: auto;
     justify-content: space-between;
-    gap: 1rem;
+    align-items: center;
+    flex-flow: wrap row;
+    position: relative;
+    background: var(--bg-color2);
+    padding: 1rem;
 }
-.certificados h2{
-    width: 20rem;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-.box-certificacion{
+
+.container-certificados{
+    width: 90%;
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 1rem;
+    margin: auto;
 }
-.box-certificacion img{
-    width: 8rem;
+.box-certificacados{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1rem;
+    margin-left: auto;
+}
+.box-certificacados h1{
+    border-bottom: 2px solid var(--main-color);
+}
+.box-certificacados p{
+    font-size: 1.4rem;
+}
+.box-certificado-img{
+    display: flex;
+    position: relative;
+    width: 60%;
+}
+.box-certificado-img img{
+    width: 50%;
+    max-height: 20rem;
 }
 
 
@@ -605,7 +608,7 @@ nav ul li a {
 .container__form {
     width: 100%;
     min-width: 20rem;
-    background: var(--main-color);
+    background: var(--bg-color);
     padding: 20px;
     margin-bottom: 2rem;
     position: relative;
@@ -616,7 +619,7 @@ nav ul li a {
 }
 .container__form .title_form{
     font-size: 1.4rem;
-    color: var(--white-color);
+    color: var(--main-color2);
     font-weight: 500;
     text-align: center;
     position: relative;
