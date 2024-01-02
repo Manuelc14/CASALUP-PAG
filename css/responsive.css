@@ -1,3 +1,13 @@
+@media screen and (max-width: 1200px) {
+    .box__nosotros{
+        flex-flow: wrap;
+    }
+    .box__nosotros2{
+        flex-flow: wrap;
+    }
+
+}
+
 
 @media screen and (max-width: 920px) {
     .container__nav {
@@ -12,7 +22,7 @@
 
     nav {
         height: 100%;
-        background: var(--main-color);
+        background: var(--main-color2);
         border-left: 2px solid var(--bg-color);
         position: fixed;
         top: 0;
@@ -30,14 +40,32 @@
     }
 
     nav ul li {
-        margin: 20px 0px;
+        margin: 20px 10px;
+        color: var(--white-color);
+    }
+    .nav_mod a{
+        color: var(--white-color);
     }
     .container__vector img {
         width: 50%;
     }
+    .box-certificado-img img{
+        width: 10rem;
+    }
+    .select{
+        background: var(--main-color);
+    }
 }
 
 @media screen and (max-width: 760px) {
+    html {
+        font-size: 52.5%;
+        overflow-x: hidden;
+    }
+    .box__footer{
+        align-items: center;
+        min-width: 30rem;
+    }
     
 }
 @media screen and (max-width: 500px){
@@ -52,6 +80,34 @@
     }
     #portfolio{
         display: none;
+    }
+    .box-certificado-img img{
+        width: 6rem;
+    }
+    html {
+        font-size: 42.5%;
+        overflow-x: hidden;
+    }
+    .box-banner-publicitario h1 {
+        font-size: 2.5rem;
+    }
+    .slider{
+        padding-top: 6%;
+    }
+    header{
+        height: 10rem;
+    }
+    .container__header{
+        height: 10rem;
+    }
+    .nav_mod {
+        height: 11rem;
+    }
+    .box__nosotros1{
+        width: 100%;
+    }
+    .box__nosotros1 img{
+        width: 100%;
     }
 
 }

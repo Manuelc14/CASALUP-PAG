@@ -1,17 +1,18 @@
-window.onscroll = function(){
+window.onscroll = () => {
 
     scroll = document.documentElement.scrollTop;
 
-    header = document.getElementById("header");
+    let header = document.getElementById("header");
 
     if (scroll > 20){
         header.classList.add('nav_mod');
+        
     }else if (scroll < 20){
         header.classList.remove('nav_mod');
-    }
+    }    
 
-
-    menuIcon.classList.remove('bx-x');
+    let titulo = document.querySelector('.title_header');
+    titulo.classList.toggle('sticky', window.scrollY > 100);
 
 }
 
@@ -38,11 +39,15 @@ window.addEventListener("resize", function(){
 
 });
 
-/*========= darck light mode =========*/
+/*========= scroll reveal =========*/
 
-let darkModeIcon = document.querySelector('#darkMode-icon');
+ScrollReveal({ 
+    reset: true,
+    distance: '80px',
+    duration: 1000,
+    delay: 200
+});
 
-darkModeIcon.onclick = () => {
-    darkModeIcon.classList.toggle('bx-sun');
-    document.body.classList.toggle('dark-mode');
-}
+ScrollReveal().reveal('.home-content, .heading, .procesos-title, .contenedor__casalup__img', { origin: 'top' });
+ScrollReveal().reveal('.home-img img, .portfolio-box, .testimonial-wrapper, .about-content, .contactanos, .services-box, .cursos-box, .box-consultas, .categories, .contacto, .box__nosotros, .slider', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .education-column, .skills-column, form, .categorias, .box-paso, .titulo__principal, .certificados, .container__card_pag, .box__nosotros1', { origin: 'left' });
