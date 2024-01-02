@@ -68,15 +68,34 @@
     }
     
 }
+@media screen and (max-width: 540px) {
+    
+    .title_header{
+        display: none;
+    }
+    .container__header{
+        padding-bottom: 4rem;
+    }
+    footer{
+        padding-bottom: 10rem;
+    }
+    .box-banner-publicitario h1 {
+        font-size: 2rem;
+    }
+    .box__nosotros1{
+        width: 100%;
+    }
+    .box__nosotros1 img{
+        width: 100%;
+    }
+    
+}
 @media screen and (max-width: 500px){
     .form .column{
         flex-wrap: wrap;
     }
     .form :where(.gender-opcion, .gender){
         row-gap: 15px;
-    }
-    .title_header{
-        display: none;
     }
     #portfolio{
         display: none;
@@ -87,9 +106,6 @@
     html {
         font-size: 42.5%;
         overflow-x: hidden;
-    }
-    .box-banner-publicitario h1 {
-        font-size: 2.5rem;
     }
     .slider{
         padding-top: 6%;
@@ -102,12 +118,6 @@
     }
     .nav_mod {
         height: 11rem;
-    }
-    .box__nosotros1{
-        width: 100%;
-    }
-    .box__nosotros1 img{
-        width: 100%;
     }
 
 }
