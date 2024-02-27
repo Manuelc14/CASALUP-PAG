@@ -51,3 +51,11 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading, .procesos-title, .contenedor__casalup__img', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .portfolio-box, .testimonial-wrapper, .about-content, .contactanos, .services-box, .cursos-box, .box-consultas, .categories, .contacto, .box__nosotros, .slider', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .education-column, .skills-column, form, .categorias, .box-paso, .titulo__principal, .certificados, .container__card_pag, .box__nosotros1', { origin: 'left' });
+
+
+
+
+/* pruebas de javascript */
+
+console.log("saludos desde javascript");
+

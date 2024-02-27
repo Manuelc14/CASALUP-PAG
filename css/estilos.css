@@ -517,7 +517,7 @@ nav ul li a {
 
 /* Tarjetas tipos de paginas */
 
-#servicios{
+#beneficios{
     padding-top: 5rem;
 }
 
@@ -591,6 +591,9 @@ nav ul li a {
     color: var(--white-color);
     transform: translateZ(60px);
 }
+.body__card_front h1{
+    height: 10rem;
+}
 
 .bg{
     width: 100%;
@@ -598,7 +601,7 @@ nav ul li a {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.459);
     border-radius: 6px;
 }
 
